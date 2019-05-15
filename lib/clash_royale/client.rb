@@ -54,17 +54,17 @@ module ClashRoyale
     end
 
     def player(tag)
-      res = http_request('/player/' + tag)
+      res = http_request('/players/' + tag)
       res.body
     end
 
     def player_upcomingchests(tag)
-      res = http_request('/player/' + tag + '/upcomingchests')
+      res = http_request('/players/' + tag + '/upcomingchests')
       res.body
     end
 
     def player_battlelog(tag)
-      res = http_request('/player/' + tag + '/battlelog')
+      res = http_request('/players/' + tag + '/battlelog')
       res.body
     end
 
