@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["kai munekuni"]
   spec.email         = ["kai.munekuni@gmail.com"]
 
-  spec.summary       = %q{to use clash royale official api}
-  spec.homepage      = "http://google.com"
+  spec.summary       = %q{A Ruby interface to the Clash Royale API}
+  spec.homepage      = "https://github.com/kai-munekuni/clash_royale"
   spec.license       = "MIT"
 
 

@@ -5,7 +5,7 @@ require 'uri'
 module ClashRoyale
   class Client
 
-    attr_accessor :access_token
+    attr_accessor :api_key
     BASE_URL = 'https://api.clashroyale.com/v1'.freeze
 
     def initialize(options = {})
@@ -19,7 +19,7 @@ module ClashRoyale
       url = URI.parse(BASE_URL + path)
       url.query = URI.encode_www_form(options)
       req = Net::HTTP::Get.new url
-      req['authorization'] = "Bearer #{access_token}"
+      req['authorization'] = "Bearer #{api_key}"
       http = Net::HTTP.new(url.host, url.port)
       http.use_ssl = true
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
