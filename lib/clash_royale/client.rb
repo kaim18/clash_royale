@@ -74,7 +74,7 @@ module ClashRoyale
     end
 
     def tournament_information(tag)
-      res = http_request('/tournaments' + tag)
+      res = http_request('/tournaments/' + tag)
       res.body
     end
 
@@ -94,7 +94,7 @@ module ClashRoyale
     end
 
     def location_information(tag)
-      res = http_request('/locations' + tag)
+      res = http_request('/locations/' + tag)
       res.body
     end
 
